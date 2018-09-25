@@ -1,0 +1,72 @@
+{
+    "segunda-feira" : [
+        {
+            "prof_id": 0,
+            "prof_nome": "Hendy",
+            "horario_entrada": "16:00",
+            "horario_saida": "22:30"
+        },
+        {
+            "prof_id": 0,
+            "prof_nome": "Vinicius",
+            "horario_entrada": "14:00",
+            "horario_saida": "17:00"
+        }
+    ],
+    "terça-feira": [
+        {
+            "prof_id": 0,
+            "prof_nome": "Hendy",
+            "horario_entrada": "16:00",
+            "horario_saida": "22:30"
+        },
+        {
+            "prof_id": 0,
+            "prof_nome": "Vinicius",
+            "horario_entrada": "14:00",
+            "horario_saida": "17:00"
+        }
+    ],
+    "quarta-feira": [        
+        {
+            "prof_id": 0,
+            "prof_nome": "Hendy",
+            "horario_entrada": "16:00",
+            "horario_saida": "22:30"
+        },
+        {
+            "prof_id": 0,
+            "prof_nome": "Vinicius",
+            "horario_entrada": "14:00",
+            "horario_saida": "17:00"
+        }
+    ],
+    "quinta-feira": [
+        {
+            "prof_id": 0,
+            "prof_nome": "Hendy",
+            "horario_entrada": "16:00",
+            "horario_saida": "22:30"
+        },
+        {
+            "prof_id": 0,
+            "prof_nome": "Vinicius",
+            "horario_entrada": "14:00",
+            "horario_saida": "17:00"
+        }
+    ],
+    "sexta-feira": [        
+        {
+            "prof_id": 0,
+            "prof_nome": "Hendy",
+            "horario_entrada": "16:00",
+            "horario_saida": "22:30"
+        },
+        {
+            "prof_id": 0,
+            "prof_nome": "Vinicius",
+            "horario_entrada": "14:00",
+            "horario_saida": "17:00"
+        }
+    ]
+}
