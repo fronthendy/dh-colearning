@@ -1,15 +1,16 @@
 {
-    "name": "Digital House Co-learning",
-    "short_name": "Co-learning",
-    "theme_color": "#ab0127",
-    "background_color": "#fff",
-    "display": "standalone",
-    "start_url": "/",
-    "icons": [
-      {
-        "src": "images/icon-72x72.png",
-        "sizes": "72x72",
-        "type": "image/png"
-      }
-    ]
-  }
+  "name": "Digital House Co-learning",
+  "short_name": "Co-learning",
+  "theme_color": "#ab0127",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "images/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}
