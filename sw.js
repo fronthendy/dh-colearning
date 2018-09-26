@@ -6,12 +6,13 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/main.css',
-        '/app.js',
-        '/manifest.js',
-        '/vendor.js',
+        'index.html',
+        'css/main.css',
+        'css/materialize.min.css',
+        'js/main.js',
+        'js/jquery.min.js',
+        'js/materialize.min.js',
+        'images/logo.png',
       ]);
     })
   )
