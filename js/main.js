@@ -27,16 +27,8 @@ $(document).ready(function(){
     url: 'escala.json',
     success: function(data) {
       let dataAtual = new Date();
-      let dia     = dataAtual.getDate();           // 1-31
       let dia_sem = dataAtual.getDay();            // 0-6 (zero=domingo)
-      let mes     = dataAtual.getMonth();          // 0-11 (zero=janeiro)
-      let ano2    = dataAtual.getYear();           // 2 dígitos
-      let ano4    = dataAtual.getFullYear();       // 4 dígitos
       let hora    = dataAtual.getHours();          // 0-23
-      let min     = dataAtual.getMinutes();        // 0-59
-      let seg     = dataAtual.getSeconds();        // 0-59
-      let mseg    = dataAtual.getMilliseconds();   // 0-999
-      let tz      = dataAtual.getTimezoneOffset(); // em minutos
 
       switch (dia_sem) {
         case 1: 
@@ -48,6 +40,11 @@ $(document).ready(function(){
             $('#tes').append(`<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>`)
           } 
         }
+        itens = $('#tes .col').length;
+          if(itens <2){
+            $('.col').removeClass('s6');
+            $('.col').addClass('s12');
+          }
         break;
         case 2: 
         let terca = data['terça-feira']
@@ -59,6 +56,11 @@ $(document).ready(function(){
           } 
 
         }
+         itens = $('#tes .col').length;
+          if(itens <2){
+            $('.col').removeClass('s6');
+            $('.col').addClass('s12');
+          }
         break;
         case 3:
         let quarta = data['quarta-feira']
@@ -68,6 +70,11 @@ $(document).ready(function(){
           if(hora >= h[0] && hora < b[0]){
             $('#tes').append('<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>')
           } 
+        }
+        itens = $('#tes .col').length;
+        if(itens <2){
+          $('.col').removeClass('s6');
+          $('.col').addClass('s12');
         }
           break;
           case 4: 
@@ -80,6 +87,11 @@ $(document).ready(function(){
            }
           
          }
+           itens = $('#tes .col').length;
+          if(itens <2){
+            $('.col').removeClass('s6');
+            $('.col').addClass('s12');
+          }
           break;
           case 5: 
          let sexta = data['sexta-feira']
@@ -91,6 +103,11 @@ $(document).ready(function(){
            }
           
          }
+         itens = $('#tes .col').length;
+          if(itens <2){
+            $('.col').removeClass('s6');
+            $('.col').addClass('s12');
+          }
           break;
       
         default:
