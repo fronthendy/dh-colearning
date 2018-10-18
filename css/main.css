@@ -8,3 +8,20 @@ main{
 header .nav-content.right{
   margin-top: 16px;
 }
+
+.picture-prof {
+    /* width: 62%!important; */
+}
+.circle-i {
+  background-color: #aaa;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  }
+  .card {
+    padding: 10px;
+  }
