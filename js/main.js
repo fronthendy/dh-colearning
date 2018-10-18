@@ -46,13 +46,7 @@ $(document).ready(function(){
          let b = num['horario_saida'].split(':')
           if(hora >= h[0] && hora < b[0]){
             $('#tes').append(`<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>`)
-          } else {
-            $('#tes').append(`
-              <div class="col s6">
-                <p> Não existem professores </p>
-              </div>
-            `)
-          }
+          } 
         }
         break;
         case 2: 
@@ -63,13 +57,7 @@ $(document).ready(function(){
           if(hora >= h[0] && hora < b[0]){
             $('#tes').append('<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div><  /div></div>')
           } 
-          else {
-            $('#tes').append(`
-              <div class="col s6">
-                <p> Não existem professores </p>
-              </div>
-            `)
-          }
+
         }
         break;
         case 3:
@@ -79,14 +67,7 @@ $(document).ready(function(){
           let b = num['horario_saida'].split(':')
           if(hora >= h[0] && hora < b[0]){
             $('#tes').append('<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>')
-          } else {
-            $('#tes').append(`
-              <div class="col s6 center-align">
-                <p> Não existem professores </p>
-              </div>
-            `)
-            break
-          }
+          } 
         }
           break;
           case 4: 
@@ -96,14 +77,8 @@ $(document).ready(function(){
           let b = num['horario_saida'].split(':')
            if(hora >= h[0] && hora < b[0]){
              $('#tes').append('<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>')
-           }else {
-            $('#tes').append(`
-              <div class="col s6 center-align">
-                <p> Não existem professores </p>
-              </div>
-            `)
-            break
-          }
+           }
+          
          }
           break;
           case 5: 
@@ -113,14 +88,8 @@ $(document).ready(function(){
           let b = num['horario_saida'].split(':')
            if(hora >= h[0] && hora < b[0]){
              $('#tes').append('<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>')
-           }else {
-            $('#tes').append(`
-              <div class="col s6 center-align">
-                <p> Não existem professores </p>
-              </div>
-            `)
-            break
-          }
+           }
+          
          }
           break;
       
@@ -152,7 +121,7 @@ $(document).ready(function(){
           </tr>`;
 
           $('li:last-child .escala tbody').append(escala);
-          
+
         }
         i++;
       }
