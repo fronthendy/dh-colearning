@@ -34,25 +34,26 @@ $(document).ready(function(){
         case 1: 
         let segunda = data['segunda-feira']
         for(let num of segunda){
-         let h = num['horario_entrada'].split(':')
-         let b = num['horario_saida'].split(':')
+          let h = num['horario_entrada'].split(':')
+          let b = num['horario_saida'].split(':')
           if(hora >= h[0] && hora < b[0]){
-            $('#tes').append(`<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>`)
+            $('#tes').append('<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>')
           } 
+
         }
-        itens = $('#tes .col').length;
+         itens = $('#tes .col').length;
           if(itens <2){
             $('.col').removeClass('s6');
             $('.col').addClass('s12');
           }
-        break;
+          break;
         case 2: 
         let terca = data['terça-feira']
         for(let num of terca){
           let h = num['horario_entrada'].split(':')
           let b = num['horario_saida'].split(':')
           if(hora >= h[0] && hora < b[0]){
-            $('#tes').append('<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div><  /div></div>')
+            $('#tes').append('<div class="col s6"> <div class="card"><div class="card-image circle-i"><img id="img-prof" class="picture-prof" src="'+num['link_foto']+'"></div><div class="card-content"><span id="nome-prof" class="card-title">'+num['prof_nome']+'</span><p id="curso">'+num['prof_curso']+'</p><p id="hora">'+num['horario_entrada'] + "-" + num['horario_saida']+'</p></div></div></div>')
           } 
 
         }
