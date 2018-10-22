@@ -10,11 +10,11 @@
         },
         {
             "prof_id": 1,
-            "prof_nome": "Thomaz",
+            "prof_nome": "Victor",
             "prof_curso": "Full Stack",
             "horario_entrada": "14:00",
             "horario_saida": "16:00",
-            "link_foto":"images/prof/thomaz.jpg"
+            "link_foto":"images/prof/victor.jpg"
         },
         {
             "prof_id": 2,
@@ -67,18 +67,10 @@
             "link_foto":"images/prof/ernani.jpg"
         },
         {
-            "prof_id": 1,
-            "prof_nome": "Thomaz",
-            "prof_curso": "Full Stack",
-            "horario_entrada": "18:00",
-            "horario_saida": "19:00",
-            "link_foto":"images/prof/thomaz.jpg"
-        },
-        {
             "prof_id": 2,
             "prof_nome": "Hendy",
             "prof_curso": "Full Stack",
-            "horario_entrada": "20:00",
+            "horario_entrada": "18:00",
             "horario_saida": "22:00",
             "link_foto":"images/prof/hendy.jpg"
         }
@@ -166,16 +158,8 @@
             "prof_nome": "Vinicius",
             "prof_curso": "Full Stack",
             "horario_entrada": "14:00",
-            "horario_saida": "15:00",
-            "link_foto":"images/prof/vinicius.jpg"
-        },
-        {
-            "prof_id": 1,
-            "prof_nome": "Thomaz",
-            "prof_curso": "Full Stack",
-            "horario_entrada": "14:00",
             "horario_saida": "17:00",
-            "link_foto":"images/prof/thomaz.jpg"
+            "link_foto":"images/prof/vinicius.jpg"
         },
         {
             "prof_id": 0,
